@@ -11,6 +11,7 @@
     "npm:@tailwindcss/vite@4": "4.1.4_vite@6.3.1__picomatch@4.0.2",
     "npm:@testing-library/jest-dom@^6.6.3": "6.6.3",
     "npm:@testing-library/svelte@^5.2.4": "5.2.7_svelte@5.27.0__acorn@8.14.1_vite@6.3.1__picomatch@4.0.2_vitest@3.1.1__jsdom@26.1.0__vite@6.3.1___picomatch@4.0.2_jsdom@26.1.0",
+    "npm:@threlte/core@^8.0.2": "8.0.2_svelte@5.27.0__acorn@8.14.1_three@0.175.0",
     "npm:eslint-config-prettier@^10.0.1": "10.1.2_eslint@9.24.0",
     "npm:eslint-plugin-svelte@3": "3.5.1_eslint@9.24.0_svelte@5.27.0__acorn@8.14.1_postcss@8.5.3",
     "npm:eslint@^9.18.0": "9.24.0",
@@ -22,6 +23,7 @@
     "npm:svelte-check@4": "4.1.6_svelte@5.27.0__acorn@8.14.1_typescript@5.8.3",
     "npm:svelte@5": "5.27.0_acorn@8.14.1",
     "npm:tailwindcss@4": "4.1.4",
+    "npm:three@0.175": "0.175.0",
     "npm:typescript-eslint@^8.20.0": "8.30.1_eslint@9.24.0_typescript@5.8.3_@typescript-eslint+parser@8.30.1__eslint@9.24.0__typescript@5.8.3",
     "npm:typescript@5": "5.8.3",
     "npm:vite@6.3.1": "6.3.1_picomatch@4.0.2",
@@ -566,6 +568,14 @@
         "svelte",
         "vite",
         "vitest"
+      ]
+    },
+    "@threlte/core@8.0.2_svelte@5.27.0__acorn@8.14.1_three@0.175.0": {
+      "integrity": "sha512-Ttn27O2QICrTFsQI2XvK2Ypx4NWWQ+RaGeZWiMo83Y5ATqkM6F9HCYOYZXtZIaasz1dZJpHFvVj9wxCeNS3ftA==",
+      "dependencies": [
+        "mitt",
+        "svelte",
+        "three"
       ]
     },
     "@tybys/wasm-util@0.9.0": {
@@ -1414,6 +1424,9 @@
         "brace-expansion@2.0.1"
       ]
     },
+    "mitt@3.0.1": {
+      "integrity": "sha512-vKivATfr97l2/QBCYAkXYDbrIWPM2IIKEl7YPhjCvKlG3kE2gm+uBo6nEXK3M5/Ffh/FLpKExzOQ3JJoJGFKBw=="
+    },
     "mri@1.2.0": {
       "integrity": "sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA=="
     },
@@ -1739,6 +1752,9 @@
     "tapable@2.2.1": {
       "integrity": "sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ=="
     },
+    "three@0.175.0": {
+      "integrity": "sha512-nNE3pnTHxXN/Phw768u0Grr7W4+rumGg/H6PgeseNJojkJtmeHJfZWi41Gp2mpXl1pg1pf1zjwR4McM1jTqkpg=="
+    },
     "tinybench@2.9.0": {
       "integrity": "sha512-0+DUvqWMValLmha6lr4kD8iAMK1HzV0/aKnCtWb9v9641TnP/MFb7Pc2bxoxQjTXAErryXVgUOfv2YqNllqGeg=="
     },
@@ -1955,6 +1971,7 @@
         "npm:@tailwindcss/vite@4",
         "npm:@testing-library/jest-dom@^6.6.3",
         "npm:@testing-library/svelte@^5.2.4",
+        "npm:@threlte/core@^8.0.2",
         "npm:eslint-config-prettier@^10.0.1",
         "npm:eslint-plugin-svelte@3",
         "npm:eslint@^9.18.0",
@@ -1966,6 +1983,7 @@
         "npm:svelte-check@4",
         "npm:svelte@5",
         "npm:tailwindcss@4",
+        "npm:three@0.175",
         "npm:typescript-eslint@^8.20.0",
         "npm:typescript@5",
         "npm:vite@^6.2.5",
