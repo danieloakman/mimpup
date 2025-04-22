@@ -1,5 +1,7 @@
 <script lang="ts">
-  import ThreeApp from '$lib/components/ThreeApp.svelte'  
+	import ThreeApp from '$lib/components/ThreeApp.svelte';
 </script>
 
-<ThreeApp />
+<div class="h-screen">
+	<ThreeApp />
+</div>

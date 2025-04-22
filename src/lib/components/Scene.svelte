@@ -1,37 +1,39 @@
-<script>
-  import { T, useTask } from '@threlte/core'
-  import { interactivity } from '@threlte/extras'
-  import { Spring } from 'svelte/motion'
+<script lang="ts">
+	import { T } from '@threlte/core';
+	import { Align, Grid, OrbitControls, Text3DGeometry, interactivity } from '@threlte/extras';
 
-  interactivity()
-
-  const scale = new Spring(1)
-
-  let rotation = 0
-  useTask((delta) => {
-    rotation += delta
-  })
+	interactivity();
 </script>
 
-<T.PerspectiveCamera
-  makeDefault
-  position={[10, 10, 10]}
-  oncreate={(ref) => {
-    ref.lookAt(0, 1, 0)
-  }}
-/>
+<T.PerspectiveCamera makeDefault position={[10, 10, 10]}>
+	<OrbitControls />
+</T.PerspectiveCamera>
 
-<T.Mesh
-  rotation.y={rotation}
-  position.y={1}
-  scale={scale.current}
-  onpointerenter={() => {
-    scale.target = 1.5
-  }}
-  onpointerleave={() => {
-    scale.target = 1
-  }}
->
-  <T.BoxGeometry args={[1, 2, 1]} />
-  <T.MeshBasicMaterial color="hotpink" />
-</T.Mesh>
+<T.DirectionalLight position={[0, 10, 10]} castShadow />
+
+<Align position={[0, 1, 0]}>
+	{#snippet children({ align })}
+		<T.Mesh castShadow>
+			<Text3DGeometry
+				text={`Coming soon!`}
+				bevelEnabled
+				bevelOffset={0}
+				bevelSegments={10}
+				bevelSize={0.05}
+				bevelThickness={0.1}
+				curveSegments={12}
+				smooth={0.05}
+				size={1}
+				depth={0.2}
+				oncreate={() => {
+					align();
+				}}
+			/>
+			<T.MeshStandardMaterial color="#FD3F00" roughness={0.3} metalness={0.7} normalScale={0.5} />
+		</T.Mesh>
+	{/snippet}
+</Align>
+
+<T.AmbientLight intensity={0.3} />
+
+<Grid cellColor="#FE3D00" sectionColor="#FE3D00" />
