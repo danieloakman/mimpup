@@ -15,6 +15,9 @@
 		"test:unit": "vitest",
 		"test": "npm run test:unit -- --run"
 	},
+	"engines": {
+		"node": ">=22.0.0"
+	},
 	"dependencies": {
 		"@threlte/core": "^8.0.2",
 		"@threlte/extras": "^9.1.3",
