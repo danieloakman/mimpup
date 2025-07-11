@@ -15,7 +15,7 @@
 	{#snippet children({ align })}
 		<T.Mesh castShadow>
 			<Text3DGeometry
-				text={`Coming soon!`}
+				text="Coming soon!"
 				bevelEnabled
 				bevelOffset={0}
 				bevelSegments={10}

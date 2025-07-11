@@ -3,12 +3,16 @@
 Mimpup is my software company. This is the root domain for mimpup.com.
 
 ## Developing
+
 1. Install bun
 2. Install dependencies
+
 ```bash
 bun i
 ```
+
 3. Run the development server
+
 ```bash
 bun dev
 ```
